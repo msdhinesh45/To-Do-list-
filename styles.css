@@ -1,81 +1,116 @@
-*{
+* {
     margin: 0;
-    /* padding: 0;   */
     box-sizing: border-box;
-}
-
-body{
+  }
+  
+  body {
     display: grid;
-    justify-content: center;
+    place-items: center;
     height: 100vh;
-    background-color: #61210F;
+    background-color: #61210f;
     color: white;
-    align-items: center;
-}
-
-h1{
+    padding: 20px;
+  }
+  
+  h1 {
     text-align: center;
     font-weight: 900;
     text-decoration: underline;
     color: white;
     font-size: 40px;
-    text-shadow:5px 1px 10px #9dc8db;
-    
-}
-.form{
-    box-shadow: 0 4px 8px rgba(0,0,0,.3);   
-    border-radius: 10px;
-    background: #F9DF74;
-    color: black;
-}
-
-.input{
+    text-shadow: 5px 1px 10px #9dc8db;
+    margin-bottom: 20px;
+  }
+  
+  .form {
     width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: #f9df74;
+    color: black;
+    padding-bottom: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+  }
+  
+  .input {
+    flex: 1;
     padding: 20px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 0 0 0;
     border: none;
     font-size: 20px;
-}
-
-.input::placeholder{
+  }
+  
+  .add-btn {
+    height: 70px;
+    padding: 22px;
+    font-size: 18px;
+    background-color: #27374d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 10px 0 0;
+  }
+  
+  .add-btn:hover {
+    background-color: #43566b;
+  }
+  
+  .input::placeholder {
     color: rgb(121, 119, 119);
-}
-
-.list{
+  }
+  
+  .list {
     padding: 0;
     margin: 0;
-}
-
-.list li{
+  }
+  
+  .list li {
     list-style: none;
-    padding: 20px;
+    padding: 15px 20px;
     font-weight: 800;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-top: dashed rgb(53, 0, 139);
-}
-
-.list .fa-circle-check{
+    border-bottom: dashed rgb(53, 0, 139);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .fa-circle-check {
     color: green;
-    position: absolute;
-    right: 580px;
-    top: 58.7%;
-    transform: translateY(-50%);
     cursor: pointer;
-}
-.list .fa-trash-can{
+    transition: transform 0.2s;
+  }
+  
+  .fa-circle-check:hover {
+    transform: scale(1.2);
+  }
+  
+  .fa-trash-can {
     color: red;
-    position: absolute;
-    right: 550px;
-    top: 58.7%;
-    transform: translateY(-50%);
     cursor: pointer;
-}
-
-.list li.checked{
+    transition: transform 0.2s;
+  }
+  
+  .fa-trash-can:hover {
+    transform: scale(1.2);
+  }
+  
+  .list li.checked {
     color: gray;
     text-decoration: line-through;
-}
-
-.list li.checked .fa-circle-check{
+  }
+  
+  .list li.checked .fa-circle-check {
     color: darkgray;
-}
+  }
+  
