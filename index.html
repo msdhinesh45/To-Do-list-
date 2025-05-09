@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/003/529/153/non_2x/business-to-do-list-flat-icon-modern-style-vector.jpg" type="image/x-icon"/>
 </head>
 <body>
-    <h1>To-Do List</h1>
-    <form class="form">
-        <input type="text" class="input" placeholder="Add a task" autocomplete="off">
-        <ul class="list">
-            <li class="checked">  Do Study
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-trash-can"></i>
-        </li>
-        </ul>
-    </form>
+  <h1>To-Do List</h1>
+  <form class="form">
+    <div class="input-container">
+      <input type="text" class="input" placeholder="Add a task" autocomplete="off" />
+      <button type="submit" class="add-btn"><i class="fa-solid fa-plus"></i> </button>
+    </div>
+    <ul class="list"></ul>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-<script src="script.js"></script>
