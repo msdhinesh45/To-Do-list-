@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    /* padding: 0;   */
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    background-color: #61210F;
+    color: white;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+    text-decoration: underline;
+    color: white;
+    font-size: 40px;
+    text-shadow:5px 1px 10px #9dc8db;
+    
+}
+.form{
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);   
+    border-radius: 10px;
+    background: #F9DF74;
+    color: black;
+}
+
+.input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    font-size: 20px;
+}
+
+.input::placeholder{
+    color: rgb(121, 119, 119);
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    list-style: none;
+    padding: 20px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-top: dashed rgb(53, 0, 139);
+}
+
+.list .fa-circle-check{
+    color: green;
+    position: absolute;
+    right: 580px;
+    top: 58.7%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.list .fa-trash-can{
+    color: red;
+    position: absolute;
+    right: 550px;
+    top: 58.7%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-circle-check{
+    color: darkgray;
+}
